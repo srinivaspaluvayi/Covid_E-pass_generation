@@ -4,8 +4,8 @@ from flask import render_template
 from flask import request
 from twilio.rest import Client
 
-account_sid = 'AC5615fae9f752556039e56b0a48640877'
-auth_token = '6d2b911db46e2a742816d0db7796a7ef'
+account_sid = ''
+auth_token = ''
 client = Client(account_sid, auth_token)
 app = Flask(__name__, static_url_path='/static')
 
