@@ -37,7 +37,7 @@ def login_registration_dtls():
     travel_pass2 = ((cntd / popd) * 100)
     if travel_pass1 < 30 and travel_pass2 < 30 and request.method == 'POST':
         status = 'CONFIRMED'
-        client.messages.create(to="whatsapp:+919381475028",
+        client.messages.create(to="whatsapp:",
                                from_="whatsapp:+14155238886",
                                body="Hello " + " " + full_name + " " + "Your Travel From " + " " + source_dt + " " +
                                     "To" + " " + destination_dt + " " + "Has" + " " + status + " On" + " " + date + " "
@@ -48,7 +48,7 @@ def login_registration_dtls():
                                var8=date, var9=status)
     else:
         status = 'Not Confirmed'
-        client.messages.create(to="whatsapp:+919381475028",
+        client.messages.create(to="whatsapp:",
                                from_="whatsapp:+14155238886",
                                body="Hello " + " " + full_name + "  " + "your travel from" + source_dt + " " + "To" +
                                     " " + destination_dt + " "
